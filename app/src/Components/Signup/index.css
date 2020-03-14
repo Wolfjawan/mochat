@@ -1,0 +1,38 @@
+.sign-up-warper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-up-form {
+  width: 400px;
+  min-height: 220px;
+  height: fit-content;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  padding: 10px;
+}
+.sign-up-form input {
+  width: 380px;
+  height: 30px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.sign-up-form button {
+  font-size: 16px;
+  width: 80px;
+  height: 50px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  margin: 10px auto;
+  background-color: #33ac28;
+  color: aliceblue;
+  cursor: pointer;
+}
+.sign-up-form button:disabled {
+    background-color: #b6b6b6;
+    color: rgb(107, 107, 107);
+  }

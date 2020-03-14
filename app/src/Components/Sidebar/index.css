@@ -1,0 +1,21 @@
+.home-chat-sidebar-warper {
+  width: 35%;
+  height: 100%;
+  border-right: 1px solid #adadad;
+  background-color: #e0fff5;
+
+}
+.home-chat-sidebar-user {
+  user-select: none;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  padding: 7px 15px;
+  color: #000000;
+  background-color: #eaf6ff;
+  border-bottom:1px solid #cecece;
+}
+.home-chat-sidebar-user-active {
+  background-color: #6490b1;
+  color: #fff;
+  }

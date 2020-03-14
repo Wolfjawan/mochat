@@ -1,0 +1,28 @@
+.home-chat-messages-header {
+  width: 65%;
+  height: 100%;
+  background-color: #d9fff3;
+  display: flex;
+  align-items: center;
+}
+.home-chat-messages-header span {
+  padding: 7px 15px;
+}
+.home-chat-messages-header p {
+  color: #818181;
+}
+.typing {
+  display: flex;
+  overflow: hidden;
+  margin-left: 2px;
+  letter-spacing: 0.15em;
+  animation: typing 0.6s steps(5, end)infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30px;
+  }
+}

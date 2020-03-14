@@ -1,0 +1,91 @@
+.jokes-warper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.jokes {
+  width: 70%;
+  height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+.jokes-header {
+  padding: 10px;
+  background-color: #83ff7e;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.jokes-list {
+  height: 90%;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.joke {
+  padding: 6px;
+  margin-bottom: 5px;
+  background-color: #abffe3e8;
+  width: fit-content;
+  border-radius: 5px;
+  color: #202020;
+}
+.jokes-load-more {
+  padding: 6px;
+  margin-bottom: 5px;
+  background-color: #63dbeb;
+  width: fit-content;
+  border-radius: 5px;
+  color: #202020;
+}
+.jokes-load-more-btn {
+  padding: 6px;
+  margin-bottom: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  color: #3b3eff;
+  cursor: pointer;
+}
+.jokes-load-more-btn:hover {
+  padding: 7px;
+}
+.jokes-load-more input {
+  max-width: 40px;
+  padding-left: 4px;
+  background-color: #00000000;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  outline: none;
+}
+
+.jokes-form {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: aqua;
+  display: flex;
+}
+.jokes-form input {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #dadada00;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.jokes-form button {
+  border: 1px solid #dadada00;
+  border-radius: 0 5px 5px 0;
+  background-color: #05da56;
+  outline: none;
+  cursor: pointer;
+}
+.jokes-form button:disabled {
+  background-color: #c0bdbd;
+}

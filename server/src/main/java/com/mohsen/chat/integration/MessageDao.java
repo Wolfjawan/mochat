@@ -16,6 +16,6 @@ public class MessageDao {
     }
 
     public List<Message> findByFromIdToId( int fromId, int toId) {
-      return (List<Message>) messageRepository.findByFromIdAndToId(fromId, toId);
+        return (List<Message>) messageRepository.findByFromIdAndToId(fromId, toId);
     }
 }

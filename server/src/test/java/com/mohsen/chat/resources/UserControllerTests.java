@@ -34,6 +34,7 @@ class UserControllerTests {
         user.setPassword( password );
         createUser( user );
         deleteUser( user.getEmail() );
+
     }
 
     @Test

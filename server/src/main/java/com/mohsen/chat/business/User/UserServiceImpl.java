@@ -48,6 +48,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public long deleteByEmail(String email) {
-     return userDao.deleteByEmail( email );
+        return userDao.deleteByEmail( email );
     }
 }

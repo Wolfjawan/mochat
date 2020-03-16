@@ -1,5 +1,6 @@
 package com.mohsen.chat.business.Message;
 
+
 import com.mohsen.chat.domain.Message;
 import com.mohsen.chat.integration.MessageDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +22,14 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public List<Message> getConversation( int fromId, int toId) {
-        List<Message> messages = (List<Message>) messageDao.findByFromIdToId(fromId, toId);
-       if( fromId != toId ) {
-           List<Message> tMessages = messageDao.findByFromIdToId(toId,fromId);
-           messages.addAll( tMessages );
-           messages.sort( Comparator.comparing( Message::getId ) );
-       }
-       Collections.reverse(messages);
-       return (List<Message>) messages;
+    public List<Message> getConversation( int fromId, int toId ) {
+        List<Message> messages = (List<Message>) messageDao.findByFromIdToId( fromId, toId );
+        if (fromId != toId) {
+            List<Message> tMessages = messageDao.findByFromIdToId( toId, fromId );
+            messages.addAll( tMessages );
+            messages.sort( Comparator.comparing( Message::getId ) );
+        }
+        Collections.reverse( messages );
+        return (List<Message>) messages;
     }
 }
